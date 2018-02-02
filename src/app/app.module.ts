@@ -7,6 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TemplateFormModule } from './template-form/template-form.module';
 import { DataFormModule } from './data-form/data-form.module';
+import { DropdownService } from './services/dropdown.service';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,7 @@ import { DataFormModule } from './data-form/data-form.module';
     TemplateFormModule,
     DataFormModule
   ],
-  providers: [],
+  providers: [DropdownService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
